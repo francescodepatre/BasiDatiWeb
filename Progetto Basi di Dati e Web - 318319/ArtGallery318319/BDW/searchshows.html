@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Search Shows</title>
+        <style>
+            body{
+                background-color: antiquewhite;
+            }
+            p{
+                text-align: center;
+                font-style: italic;
+                font-family: Verdana;
+            }
+            h1{
+                text-align: center;
+                font-family: Arial;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <h1>Search Art Shows</h1>
+
+        <form action="http://localhost/ArtGallery318319/BDW/show_title_output.php" method="post">
+            <b>Title:</b>
+            <input type="text" name="showtitle">
+            <br><br>
+            <input type="submit" value="Search">
+            <br><br>
+        </form>
+
+        <form action="http://localhost/ArtGallery318319/BDW/show_time_output.php" method="post">
+            <b>Date: </b>
+            <input type="datetime-local" name="showtime">
+            <br><br>
+            <input type="submit" value="Search">
+            <br><br>
+        </form>
+        
+        <form action="http://localhost/ArtGallery318319/BDW/show_type_output.php" method="post">
+            <b>Type:</b>
+            <input type="text" name="showtype">
+            <br><br>
+            <input type="submit" value="Search">
+            <br><br>
+        </form>
+        
+    </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Search Artists</title>
+        <style>
+            body{
+                background-color: antiquewhite;
+            }
+            p{
+                text-align: center;
+                font-style: italic;
+                font-family: Verdana;
+            }
+            h1{
+                text-align: center;
+                font-family: Arial;
+            }
+            .name_search{
+                text-align: center;
+            }
+            .year_search{
+                text-align: center;
+            }
+            .place_search{
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Search Artists</h1>
+
+        <div class="name_search">
+            <form action="http://localhost/ArtGallery318319/BDW/artists_surname_output.php" method="post">
+                <b>Search artists by surname:</b>
+                <input type="text" name="artistsurname">
+                <br><br>
+                <input type="submit" value="Search">
+                <br><br>
+            </form>
+        </div>
+        
+        <div class="year_search">
+            <form action="http://localhost/ArtGallery318319/BDW/artists_year_output.php" method="post">
+                <b>Search artists by birth year: </b>
+                <input type="number" name="birthyear">
+                <br><br>
+                <input type="submit" value="Search">
+                <br><br>
+            </form>
+        </div>
+       
+        <div class="place_search">
+            <form action="http://localhost/ArtGallery318319/BDW/artists_place_output.php" method="post">
+                <b>Search artists by birth place:</b>
+                <input type="text" name="place">
+                <br><br>
+                <input type="submit" value="Search">
+                <br><br>
+            </form>
+        </div>
+        
+        
+    </body>
+</html>
